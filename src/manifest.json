@@ -1,0 +1,33 @@
+{
+    "name": "BOJ Advanced",
+    "short_name": "BojAdvanced",
+    "description": "An extension for easier use of Baekjoon Online Judge",
+    "homepage_url": "https://github.com/futurers/Boj-Advanced",
+    "version": "0.0.1",
+    "version_name": "0.0.1-pre_alpha",
+    "manifest_version": 3,
+    "default_locale": "ko",
+    "minimum_chrome_version": "88",
+    "permissions": [],
+    "icons": {
+        "128": "assets/img/128x128.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/img/16x16.png",
+            "24": "assets/img/24x24.png",
+            "32": "assets/img/32x32.png"
+        },
+        "default_title": "Boj Advanced",
+        "default_popup": "./popup.html"
+    },
+    "chrome": {
+        
+    },
+    "firefox": {
+
+    }
+}

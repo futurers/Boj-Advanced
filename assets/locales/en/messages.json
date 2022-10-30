@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "Boj Advanced"
+    },
+    "appShortName": {
+        "message": "Boj Advanced"
+    },
+    "appDescription": {
+        "message": "This is an extension for easier use of Baekjoon Online Judge."
+    }
+}

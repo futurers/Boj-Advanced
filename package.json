@@ -1,0 +1,60 @@
+{
+    "name": "boj-advanced",
+    "description": "This is an extension for easier use of Baekjoon Online Judge.",
+    "version": "0.0.1",
+    "homepage": "https://github.com/futurers/Boj-Advanced",
+    "author": "futurers",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/futurers/Boj-Advanced.git"
+    },
+    "scripts": {
+        "start": "xt-build -e dev -w",
+        "start:firefox": "xt-build -e dev -p firefox -w",
+        "build": "xt-build -e prod",
+        "build:firefox": "xt-build -e prod -p firefox",
+        "clean": "xt-clean",
+        "docs": "xt-docs",
+        "test": "xt-test",
+        "coverage": "nyc --reporter=lcov npm run test",
+        "sync": "xt-sync"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
+    },
+    "eslintIgnore": [
+        "test/**/*"
+    ],
+    "devDependencies": {
+        "extension-cli": "latest"
+    },
+    "xtdocs": {
+        "source": {
+            "include": [
+                "README.md",
+                "src"
+            ]
+        }
+    },
+    "xtbuild": {
+        "locales_list": ["en", "ko"],
+        "locales_dir": "./assets/locales/",
+        "manifest": "./src/manifest.json",
+        "js_bundles": [
+            {
+                "name": "background",
+                "src": "./src/background/**/*.js"
+            },
+            {
+                "name": "app",
+                "src": "./src/app/**/*.js"
+            },
+            {
+                "name": "popup",
+                "src": "./src/popup/**/*.js"
+            }
+        ]
+    }
+}
