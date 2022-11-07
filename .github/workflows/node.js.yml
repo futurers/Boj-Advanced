@@ -29,3 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: "dist/*"
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
